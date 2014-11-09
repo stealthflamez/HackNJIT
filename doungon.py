@@ -168,12 +168,16 @@ def playGame():
                         health-= enemy[positions[player]]
                     elif enemy[positions[player]] == 2:
                         print('SKELETON, you lose ' , enemy[positions[player]] , ' HP')
+                        health-= enemy[positions[player]]
                     elif enemy[positions[player]] == 3:
                         print('GOBLIN, you lose ' , enemy[positions[player]] , ' HP')
+                        health-= enemy[positions[player]]
                     elif enemy[positions[player]] == 4:
                         print('WOLF, you lose ' , enemy[positions[player]] , ' HP')
+                        health-= enemy[positions[player]]
                     elif enemy[positions[player]] == 5:
-                        print('BABY DRAGON, you lose ' , enemy[positions[player]] , ' HP')  
+                        print('BABY DRAGON, you lose ' , enemy[positions[player]] , ' HP')
+                        health-= enemy[positions[player]]
                     del enemy[positions[player]]
 
                 if positions[player] in bonus:
