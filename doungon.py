@@ -18,7 +18,7 @@ def getBoardInfo():
     
     spaces=100
     enemy=25
-    bonus=15
+    bonus=10
     return spaces, enemy, bonus
 
 def enemy():
@@ -49,7 +49,7 @@ def boardSetup(boardSize, enemyNum, bonusNum):
         if space in bonus or space in enemy:
             continue
 
-        bonus[space] = random.randint(1,5)        
+        bonus[space] = random.randint(1,3)        
         
     while len(victory) < 1:
         space = random.randint(5, boardSize)
