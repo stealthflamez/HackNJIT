@@ -94,6 +94,9 @@ def playGame():
     
     board=turtle.Turtle()
 
+    text.speed(0)
+    board.speed(0)
+
     rectangle(board)
     player = getPlayerNames()
     
@@ -118,9 +121,9 @@ def playGame():
         move = movement()
         
         if move == 1 and right+ 1 > 9:
-            print(', dude, wall...')
+            print(player , ', dude, wall...')
         elif move == -1 and right-1 < 0:
-            print(', dude, wall...')
+            print(player , ', dude, wall...')
         else:      
             if positions[player] + move <= boardSize and positions[player] + move > 0:
                 positions[player] += move
